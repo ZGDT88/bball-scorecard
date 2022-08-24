@@ -70,3 +70,10 @@ p {
     font-family: 'Cursed Timer ULiL';
     padding-top: 15px
 }
+
+.clean {
+    height: 25px;
+    width: 75px;
+    position: absolute;
+    bottom: 10% 
+}

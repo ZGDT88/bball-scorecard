@@ -1,35 +1,45 @@
-let count = 0
+let hCount = 0
+let gCount = 0
 let homeCount = document.getElementById("home-count")
 let guestCount = document.getElementById("guest-count")
+let clean = document.getElementById("reset")
 
 
 function plusOneHome(){
-    count += 1
-    homeCount.textContent = count
+    hCount += 1
+    homeCount.textContent = hCount
 }
 
 function plusTwoHome(){
-    count += 2
-    homeCount.textContent = count
+    hCount += 2
+    homeCount.textContent = hCount
 }
 
 function plusThreeHome(){
-    count += 3
-    homeCount.textContent = count
+    hCount += 3
+    homeCount.textContent = hCount
 }
 
 
 function plusOneGuest(){
-    count += 1
-    guestCount.textContent = count
+    gCount += 1
+    guestCount.textContent = gCount
 }
 
 function plusTwoGuest(){
-    count += 2
-    guestCount.textContent = count
+    gCount += 2
+    guestCount.textContent = gCount
 }
 
 function plusThreeGuest(){
-    count += 3
-    guestCount.textContent = count
+    gCount += 3
+    guestCount.textContent = gCount
+}
+
+function reset(){
+    gCount = 0
+    hCount = 0
+    guestCount.textContent = gCount
+    homeCount.textContent = hCount
+    
 }
